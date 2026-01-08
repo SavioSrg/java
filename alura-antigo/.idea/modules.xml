@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AplicacaoCompras/AplicacaoCompras.iml" filepath="$PROJECT_DIR$/AplicacaoCompras/AplicacaoCompras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BuscarEndereco/BuscarEndereco.iml" filepath="$PROJECT_DIR$/BuscarEndereco/BuscarEndereco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CC2/CC2.iml" filepath="$PROJECT_DIR$/CC2/CC2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassificacaoDePessoa-ArraysList/ClassificacaoDePessoa-ArraysList.iml" filepath="$PROJECT_DIR$/ClassificacaoDePessoa-ArraysList/ClassificacaoDePessoa-ArraysList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicio-classPessoa/Exercicio-classPessoa.iml" filepath="$PROJECT_DIR$/Exercicio-classPessoa/Exercicio-classPessoa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simulacao-bancaria/Simulacao-bancaria.iml" filepath="$PROJECT_DIR$/Simulacao-bancaria/Simulacao-bancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/alura-antigo.iml" filepath="$PROJECT_DIR$/.idea/alura-antigo.iml" />
+    </modules>
+  </component>
+</project>

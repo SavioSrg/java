@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Desafios-Alura/Exercicio-classPessoa/Exercicio-classPessoa.iml" filepath="$PROJECT_DIR$/Desafios-Alura/Exercicio-classPessoa/Exercicio-classPessoa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desafios-Alura/Simulacao-bancaria/Simulacao-bancaria.iml" filepath="$PROJECT_DIR$/Desafios-Alura/Simulacao-bancaria/Simulacao-bancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-exercises.iml" filepath="$PROJECT_DIR$/.idea/java-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desafios-Alura/screenMatch/screenMatch.iml" filepath="$PROJECT_DIR$/Desafios-Alura/screenMatch/screenMatch.iml" />
+    </modules>
+  </component>
+</project>
