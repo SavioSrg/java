@@ -30,3 +30,7 @@ Crie uma classe Cat com variáveis de instância name e age. Implemente um const
 
 ### **4. Sobrecarga de Parametrizado**
 Crie uma classe Dog com name e color, implementando um construtor que receba e atribua esses valores no momento da criação.
+
+
+### **5. Sobrecarga de Construtores**
+Implemente a classe Book com title, author e price. Crie três construtores: um padrão, um que receba apenas título e autor, e outro que receba os três atributos.
