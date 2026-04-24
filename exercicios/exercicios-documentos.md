@@ -26,3 +26,7 @@
 
 ### **3. Construtor Padrão (Default)**
 Crie uma classe Cat com variáveis de instância name e age. Implemente um construtor padrão que inicialize o nome como "Unknown" e a idade como 0.
+
+
+### **4. Sobrecarga de Parametrizado**
+Crie uma classe Dog com name e color, implementando um construtor que receba e atribua esses valores no momento da criação.
