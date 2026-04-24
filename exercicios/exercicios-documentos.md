@@ -39,3 +39,10 @@ Implemente a classe Book com title, author e price. Crie três construtores: um 
 
 ### **6. Encadeamento de Construtores (Chaining)**
 Crie uma classe Student e utilize a palavra-chave this() para fazer com que um construtor chame outro, inicializando studentId, studentName e grade.
+
+### **7. Construtor de Cópia**
+Na classe Rectangle, implemente um construtor que inicialize um novo objeto utilizando os valores de um objeto já existente.
+
+
+### **8. Construtor com Validação**
+Crie uma classe Account onde o construtor deve validar se o número da conta não é nulo/vazio e se o saldo inicial não é negativo, exibindo erro se falhar.
