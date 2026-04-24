@@ -23,6 +23,7 @@
 
 - **Exemplo:** Entrada: `10, 5`. Saída: `Soma: 15, Produto: 50, Média: 7.5`.
 
+## Construtores
 
 ### **3. Construtor Padrão (Default)**
 Crie uma classe Cat com variáveis de instância name e age. Implemente um construtor padrão que inicialize o nome como "Unknown" e a idade como 0.
@@ -34,3 +35,7 @@ Crie uma classe Dog com name e color, implementando um construtor que receba e a
 
 ### **5. Sobrecarga de Construtores**
 Implemente a classe Book com title, author e price. Crie três construtores: um padrão, um que receba apenas título e autor, e outro que receba os três atributos.
+
+
+### **6. Encadeamento de Construtores (Chaining)**
+Crie uma classe Student e utilize a palavra-chave this() para fazer com que um construtor chame outro, inicializando studentId, studentName e grade.
