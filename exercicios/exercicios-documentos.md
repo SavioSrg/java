@@ -22,3 +22,7 @@
     1. Calcular soma, produto e média (a média deve ser `double`).
 
 - **Exemplo:** Entrada: `10, 5`. Saída: `Soma: 15, Produto: 50, Média: 7.5`.
+
+
+### **3. Construtor Padrão (Default)**
+Crie uma classe Cat com variáveis de instância name e age. Implemente um construtor padrão que inicialize o nome como "Unknown" e a idade como 0.
