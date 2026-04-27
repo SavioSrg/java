@@ -55,3 +55,7 @@ Crie uma classe Vehicle com um atributo speed privado.
 Implemente métodos getSpeed() e setSpeed() com validação (não permitir valores negativos).
 Crie um método speedUp() que aumenta a velocidade.
 Em seguida, crie duas subclasses Car e Bicycle que sobrescrevem o método speedUp() com regras diferentes de aumento de velocidade.
+
+### **10. Esconder Dados**
+Criar uma classe base Shape com métodos draw() e calculateArea(). Implemente subclasses como Circle e Cylinder, 
+onde o Cylinder deve encapsular a lógica de cálculo de sua área de superfície total ao sobrescrever o método da classe pai.
