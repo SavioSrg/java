@@ -46,3 +46,12 @@ Na classe Rectangle, implemente um construtor que inicialize um novo objeto util
 
 ### **8. Construtor com Validação**
 Crie uma classe Account onde o construtor deve validar se o número da conta não é nulo/vazio e se o saldo inicial não é negativo, exibindo erro se falhar.
+
+
+## **Encapsulamento**
+
+### **9. Esconder Dados**
+Crie uma classe Vehicle com um atributo speed privado.
+Implemente métodos getSpeed() e setSpeed() com validação (não permitir valores negativos).
+Crie um método speedUp() que aumenta a velocidade.
+Em seguida, crie duas subclasses Car e Bicycle que sobrescrevem o método speedUp() com regras diferentes de aumento de velocidade.
