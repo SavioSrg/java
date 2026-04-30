@@ -59,3 +59,12 @@ Em seguida, crie duas subclasses Car e Bicycle que sobrescrevem o método speedU
 ### **10. Esconder Dados**
 Criar uma classe base Shape com métodos draw() e calculateArea(). Implemente subclasses como Circle e Cylinder, 
 onde o Cylinder deve encapsular a lógica de cálculo de sua área de superfície total ao sobrescrever o método da classe pai.
+
+## Membros da Classe com o Modificador static
+
+### **11. Monitor de Instâncias de Funcionários**
+Crie uma classe Funcionario que monitore automaticamente quantos objetos foram criados em memória durante a execução do programa.
+
+Declare uma variável private static int contagem que é incrementada no construtor da classe.
+
+Crie um método public static int getQuantidadeFuncionarios() para retornar esse valor sem precisar instanciar a classe para chamá-lo.
