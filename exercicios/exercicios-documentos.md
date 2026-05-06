@@ -68,3 +68,17 @@ Crie uma classe Funcionario que monitore automaticamente quantos objetos foram c
 Declare uma variável private static int contagem que é incrementada no construtor da classe.
 
 Crie um método public static int getQuantidadeFuncionarios() para retornar esse valor sem precisar instanciar a classe para chamá-lo.
+
+## Associação
+
+### **12. Associação Bilateral: Jogadores e Times**
+Implemente uma relação bidirecional onde um Jogador pertence a um Time e um Time possui uma lista de Jogadores.
+
+Objetivo: Praticar associação de objetos, manipulação de arrays e verificações de referência nula (null check).
+
+Requisitos:
+- Atributo Time na classe Jogador.
+- Atributo Jogador[] na classe Time.
+- Métodos de impressão que exibam os dados de ambas as classes vinculadas.
+
+Exemplo: Ao imprimir um Time, o programa deve listar todos os Jogadores associados a ele.
