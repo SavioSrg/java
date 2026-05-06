@@ -82,3 +82,15 @@ Requisitos:
 - Métodos de impressão que exibam os dados de ambas as classes vinculadas.
 
 Exemplo: Ao imprimir um Time, o programa deve listar todos os Jogadores associados a ele.
+
+### **13. Associação: Veículo e Placa**
+Modele um sistema onde uma classe de registro (Associacao) vincula um Carro a uma Placa.
+
+Objetivo: Praticar a navegação entre objetos onde a classe associativa detém a referência.
+
+Requisitos:
+- Classe Carro com nome e marca.
+- Classe Associacao com atributo String placa e atributo do tipo Carro.
+- Exibir a frase: "O veículo [Nome] possui a placa [Placa]".
+
+Exemplo: A partir de um objeto Associacao, acessar o nome do Carro vinculado para exibir o relatório.
