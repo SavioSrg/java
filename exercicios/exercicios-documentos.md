@@ -94,3 +94,17 @@ Requisitos:
 - Exibir a frase: "O veículo [Nome] possui a placa [Placa]".
 
 Exemplo: A partir de um objeto Associacao, acessar o nome do Carro vinculado para exibir o relatório.
+
+## Herança
+
+### **14. Polimorfismo: Controle de Bonificações**
+Implemente um sistema de folha de pagamento que processe diferentes regras de bônus através de uma referência única.
+
+Objetivo: Compreender o Dynamic Binding, observando como a JVM identifica o método correto de uma subclasse em tempo de execução, mesmo quando referenciada pela classe mãe.
+
+Requisitos:
+- Classe Funcionario: Base com o método getBonificacao() (retorno de 10% do salário).
+- Subclasses Gerente e Diretor: Devem sobrescrever getBonificacao() para retornar 15% e 20%, respectivamente.
+- Classe ControleDeBonificacoes: Possuir o método registra(Funcionario f) que utiliza uma lista (ArrayList) para armazenar os funcionários e acumular o valor total das bonificações.
+
+Exemplo: Ao fornecer um Gerente ao método registra, o sistema deve ignorar a regra padrão de 10% e aplicar a regra específica de 15%, garantindo o acoplamento reduzido.
