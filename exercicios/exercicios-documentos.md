@@ -118,3 +118,13 @@ Requisitos:
  - Implemente o método `sacar(double valor)` na classe mãe.
  - Crie a subclasse `ContaCorrente` que cobra uma taxa de R$ 0,10 para cada saque realizado (sobrescrita).
  -  Crie a subclasse `ContaPoupanca` e implemente um método de atualização que rende juros conforme uma taxa passada por parâmetro.
+
+## Modificador final
+
+### **16. Segurança de Algoritmos Críticos (Modificador final)**
+Em sistemas de seguros e finanças, certas fórmulas e estruturas não podem ser modificadas para garantir a integridade dos dados e evitar comportamentos inesperados em subclasses.
+
+Requisitos:
+- Impedir Extensão: Verifique que a classe CalculadoraFiscal não permite subclasses.
+- Impedir Sobrescrita: Tente declarar um método public double calcularTaxaFixa() dentro da classe Operacao e observe o erro: 'calcularTaxaFixa()' cannot override 'calcularTaxaFixa()' in 'Seguro'; overridden method is final.
+- Composição vs Herança: Note que a CalculadoraFiscal processa objetos do tipo Operacao, mas não herda deles, mantendo as responsabilidades separadas.
