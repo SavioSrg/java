@@ -108,3 +108,13 @@ Requisitos:
 - Classe ControleDeBonificacoes: Possuir o método registra(Funcionario f) que utiliza uma lista (ArrayList) para armazenar os funcionários e acumular o valor total das bonificações.
 
 Exemplo: Ao fornecer um Gerente ao método registra, o sistema deve ignorar a regra padrão de 10% e aplicar a regra específica de 15%, garantindo o acoplamento reduzido.
+
+### **15. Hierarquia de Contas Bancárias(Herança e Sobrescrita)**
+
+Modele um sistema para um banco que possui diferentes tipos de contas. Todas as contas possuem um saldo, mas o método de "saque" e "atualização" varia conforme o tipo.
+
+Requisitos:
+ - Crie uma superclasse `Conta` com o atributo `protected double saldo`.
+ - Implemente o método `sacar(double valor)` na classe mãe.
+ - Crie a subclasse `ContaCorrente` que cobra uma taxa de R$ 0,10 para cada saque realizado (sobrescrita).
+ -  Crie a subclasse `ContaPoupanca` e implemente um método de atualização que rende juros conforme uma taxa passada por parâmetro.
