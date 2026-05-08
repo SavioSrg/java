@@ -128,3 +128,17 @@ Requisitos:
 - Impedir Extensão: Verifique que a classe CalculadoraFiscal não permite subclasses.
 - Impedir Sobrescrita: Tente declarar um método public double calcularTaxaFixa() dentro da classe Operacao e observe o erro: 'calcularTaxaFixa()' cannot override 'calcularTaxaFixa()' in 'Seguro'; overridden method is final.
 - Composição vs Herança: Note que a CalculadoraFiscal processa objetos do tipo Operacao, mas não herda deles, mantendo as responsabilidades separadas.
+
+## Casting
+
+### **17. Sistema de Veículos com Casting (Casting de Dados e Sobrescrita)**
+
+**Descrição do problema:** Modele uma frota onde veículos genéricos precisam ser identificados para ações específicas (como ligar o turbo em carros).
+
+Requisitos:
+- Crie a classe `Veiculo` com o método `liga()`.
+- Crie a subclasse `Carro` com um método exclusivo `ativarArCondicionado()`.
+- Crie uma lista de `Veiculo` e adicione objetos do tipo `Carro`.
+- Ao percorrer a lista, utilize o operador `instanceof` para verificar se o veículo é um `Carro` e, se for, realize o **casting** para chamar o método exclusivo de ar condicionado.
+
+**Conceitos:** Downcasting, `instanceof`, Vinculação dinâmica
