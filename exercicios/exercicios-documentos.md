@@ -142,3 +142,61 @@ Requisitos:
 - Ao percorrer a lista, utilize o operador `instanceof` para verificar se o veículo é um `Carro` e, se for, realize o **casting** para chamar o método exclusivo de ar condicionado.
 
 **Conceitos:** Downcasting, `instanceof`, Vinculação dinâmica
+
+## Enum
+
+### **18. Sistema de Clientes e Formas de Pagamento (Enum com comportamento)**
+
+**Descrição do problema:** Uma empresa possui diferentes tipos de clientes e formas de pagamento. Cada forma de pagamento aplica um desconto diferente, e os tipos de clientes possuem informações padronizadas, como código e descrição.
+
+**Objetivo:** Aprender a utilizar `enum` com atributos e métodos, organizando regras de negócio diretamente dentro dele.
+
+**Requisitos:**
+ - Crie a classe `Cliente` com:
+      * `nome`
+      * `TipoCliente`
+      * `TipoPagamento`
+ 
+
+- Crie o enum `TipoCliente` contendo:
+    * `PESSOA_FISICA`
+    * `PESSOA_JURIDICA`
+
+
+* Cada tipo deve possuir:
+    * código
+    * descrição
+    * métodos getters
+
+
+* Crie um método para buscar o tipo pela descrição:
+
+```java
+tipoClientePorNomeRelato(String descricao)
+```
+
+* Crie o enum `TipoPagamento` contendo:
+    * `DEBITO`
+    * `CREDITO`
+
+
+* Cada tipo de pagamento deve implementar uma regra própria de desconto:
+    * Débito → 5%
+    * Crédito → 1%
+
+
+* Crie um método abstrato:
+```java
+calcularDesconto(double valor)
+```
+
+* No `main`:
+    * Crie clientes
+    * Exiba os dados
+    * Calcule descontos
+    * Busque um tipo pelo nome
+
+**Exemplo:**
+Ao calcular o desconto de um cliente com pagamento em débito, o sistema deve aplicar automaticamente a regra de 5%.
+
+**Conceitos:** Enums, métodos abstratos, polimorfismo e encapsulamento.
