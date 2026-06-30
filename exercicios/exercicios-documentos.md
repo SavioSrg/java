@@ -228,3 +228,17 @@ Herda de Funcionario e implementa o método de promoção com as seguintes regra
 - Se ordem nova < atual: Bloqueia a operação informando que rebaixamentos não são permitidos.
 
 Exibição: Sobrescreva o método toString() para exibir o nome, a descrição amigável do cargo e o salário formatado.
+
+## Interface
+
+### **Sistema de Notificações (Básico)
+Objetivo: Entender a criação e implementação de uma interface simples.
+
+Crie uma interface Notificador com o método void enviarMensagem(String mensagem).
+
+Crie três classes que implementam essa interface:
+- NotificacaoEmail: Exibe no console "Enviando E-mail: [mensagem]".
+- NotificacaoSMS: Exibe no console "Enviando SMS: [mensagem]".
+- NotificacaoPush: Exibe no console "Enviando Push Notification: [mensagem]".
+
+Na classe Main, crie uma lista (List<Notificador>) com os três tipos de notificadores e use um laço de repetição (for) para enviar uma mensagem padrão para todos eles de uma vez.
