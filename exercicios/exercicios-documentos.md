@@ -200,3 +200,31 @@ calcularDesconto(double valor)
 Ao calcular o desconto de um cliente com pagamento em débito, o sistema deve aplicar automaticamente a regra de 5%.
 
 **Conceitos:** Enums, métodos abstratos, polimorfismo e encapsulamento.
+
+## Classe abstrata
+
+### **19. Sistema de Plano de Carreira (POO)**
+Objetivo: Crie um sistema em Java para gerenciar a evolução de carreira de funcionários utilizando os conceitos de POO.
+
+**Requisitos:**
+Enum deve conter os cargos:
+- ESTAGIARIO (1), 
+- ASSISTENTE (2), 
+- ANALISTA (3), 
+- SUPERVISOR (4) ,
+- GESTOR (5)
+
+obs. controlados por um valor numérico de ordem hierárquica.
+
+Classe Abstrata Funcionario: 
+- Atributos privados: nome, salario e cargo. 
+- Validação: O método setSalario não deve aceitar valores negativos. 
+- Método abstrato: public abstract void subiuDeCargo(Cargo novoCargo);
+
+Classe Concreta Desenvolvedor -
+Herda de Funcionario e implementa o método de promoção com as seguintes regras de negócio:
+- Se ordem nova > atual: Atualiza o cargo e exibe mensagem de sucesso.
+- Se ordem nova == atual: Informa que o funcionário já está nesse cargo.
+- Se ordem nova < atual: Bloqueia a operação informando que rebaixamentos não são permitidos.
+
+Exibição: Sobrescreva o método toString() para exibir o nome, a descrição amigável do cargo e o salário formatado.
