@@ -231,7 +231,7 @@ Exibição: Sobrescreva o método toString() para exibir o nome, a descrição a
 
 ## Interface
 
-### **Sistema de Notificações (Básico)
+### **21. Sistema de Notificações (Básico)**
 Objetivo: Entender a criação e implementação de uma interface simples.
 
 Crie uma interface Notificador com o método void enviarMensagem(String mensagem).
@@ -242,3 +242,19 @@ Crie três classes que implementam essa interface:
 - NotificacaoPush: Exibe no console "Enviando Push Notification: [mensagem]".
 
 Na classe Main, crie uma lista (List<Notificador>) com os três tipos de notificadores e use um laço de repetição (for) para enviar uma mensagem padrão para todos eles de uma vez.
+
+## Polimorfismo
+
+### **22. Sons da Natureza**
+
+Crie uma hierarquia de animais onde cada espécie reage a um comando genérico de emitir som de maneira distinta.
+
+Objetivo de aprendizado: Praticar a sobrescrita de métodos e entender como o Java decide qual método chamar em tempo de execução.
+
+Requisitos:
+
+- Crie uma superclasse Animal com o método emitirSom();
+- Implemente as subclasses Cachorro, Gato e Passaro, cada uma fornecendo sua própria implementação do som;
+- Em uma classe de teste, utilize um array de Animal para armazenar instâncias das subclasses e percorra-o invocando o som polimorficamente.
+
+Conceitos: Herança, Sobrescrita (@Override), Referência de superclasse
