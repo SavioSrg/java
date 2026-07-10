@@ -258,3 +258,15 @@ Requisitos:
 - Em uma classe de teste, utilize um array de Animal para armazenar instâncias das subclasses e percorra-o invocando o som polimorficamente.
 
 Conceitos: Herança, Sobrescrita (@Override), Referência de superclasse
+
+### **23. Folha de Pagamento Corporativa**
+Descrição do problema: Desenvolva um sistema que calcule os rendimentos semanais de diferentes tipos de funcionários (Assalariados, Horistas e Comissionados) de forma genérica.
+
+Objetivo de aprendizado: Utilizar classes abstratas para definir um contrato comum para uma hierarquia de herança.
+
+Requisitos:
+- Declare a classe abstrata Employee (ou Funcionario) com um método abstrato vencimentos();
+- As subclasses devem implementar o cálculo: SalariedEmployee (salário fixo), HourlyEmployee (horas trabalhadas + extras) e CommissionEmployee (porcentagem de vendas);
+- O sistema deve ser capaz de aplicar um bônus de 10% apenas para funcionários que sejam do tipo BasePlusCommissionEmployee durante o processamento;
+
+Conceitos: Classes e Métodos Abstratos, instanceof, Downcasting
