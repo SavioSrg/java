@@ -270,3 +270,15 @@ Requisitos:
 - O sistema deve ser capaz de aplicar um bônus de 10% apenas para funcionários que sejam do tipo BasePlusCommissionEmployee durante o processamento;
 
 Conceitos: Classes e Métodos Abstratos, instanceof, Downcasting
+
+### **24. Sistema de Contas a Pagar Unificado**
+Descrição do problema: Uma empresa precisa processar pagamentos tanto para seus funcionários quanto para faturas de fornecedores (Invoices) em um único lote financeiro.
+
+Objetivo de aprendizado: Demonstrar como uma interface pode unificar tipos totalmente distintos em um processamento polimórfico.
+
+Requisitos:
+- Crie a interface Payable (ou Pagavel) com o método getPaymentAmount();
+- Faça com que a classe Invoice e a classe abstrata Employee implementem essa interface;
+- Crie um programa que armazene ambos os tipos em um ArrayList<Payable> e processe o pagamento total;
+
+Conceitos: Realização de Interface, Coleções Polimórficas
