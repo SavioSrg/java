@@ -305,3 +305,12 @@ Requisitos:
 - Capturar ArithmeticException caso o segundo número seja zero.
 - Capturar InputMismatchException caso o usuário digite texto/letras.
 
+### **27. O Operador Ponto em Nulos**
+Descrição do problema: Crie um programa que tente acessar um método de um objeto que ainda não foi instanciado em memória.
+
+Objetivo de aprendizado: Provocar, capturar e compreender a NullPointerException, a Unchecked Exception mais comum do Java.
+
+Requisitos:
+- Declarar uma variável de referência para uma classe qualquer (ex: String texto).
+- Inicializá-la explicitamente com null.
+- Tentar chamar um método a partir dessa variável (ex: texto.length()) dentro de um bloco try-catch.
