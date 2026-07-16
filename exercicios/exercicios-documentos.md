@@ -294,3 +294,14 @@ Requisitos:
 - Declarar um array de inteiros de tamanho fixo.
 - Criar um laço for que ultrapasse o tamanho limite do array, forçando uma ArrayIndexOutOfBoundsException.
 - Executar o programa sem tratamento e analisar a saída no console.
+
+### **26. Captura Múltipla**
+Descrição do problema: Escreva um programa de calculadora simples que peça dois números ao usuário para realizar uma operação de divisão, lidando com diferentes tipos de falhas de entrada e de matemática.
+
+Objetivo de aprendizado: Utilizar múltiplos blocos catch para tratar exceções de naturezas diferentes de forma independente.
+
+Requisitos:
+- Solicitar dois números via console (usando Scanner).
+- Capturar ArithmeticException caso o segundo número seja zero.
+- Capturar InputMismatchException caso o usuário digite texto/letras.
+
