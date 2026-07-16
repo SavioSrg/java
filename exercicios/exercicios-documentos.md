@@ -282,3 +282,15 @@ Requisitos:
 - Crie um programa que armazene ambos os tipos em um ArrayList<Payable> e processe o pagamento total;
 
 Conceitos: Realização de Interface, Coleções Polimórficas
+
+## Exceptions
+
+### **25. Exploração de Stacktrace**
+Descrição do problema: Crie um programa que intencionalmente cause uma falha ao tentar acessar um índice inexistente de um array durante um laço de repetição.
+
+Objetivo de aprendizado: Compreender a leitura da stacktrace, identificando o nome da exceção, a mensagem e a linha do erro.
+
+Requisitos:
+- Declarar um array de inteiros de tamanho fixo.
+- Criar um laço for que ultrapasse o tamanho limite do array, forçando uma ArrayIndexOutOfBoundsException.
+- Executar o programa sem tratamento e analisar a saída no console.
