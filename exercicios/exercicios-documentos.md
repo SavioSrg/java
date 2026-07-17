@@ -314,3 +314,14 @@ Requisitos:
 - Declarar uma variável de referência para uma classe qualquer (ex: String texto).
 - Inicializá-la explicitamente com null.
 - Tentar chamar um método a partir dessa variável (ex: texto.length()) dentro de um bloco try-catch.
+
+### **28. Garantia de Execução com Finally**
+Descrição do problema: Simule o ciclo de vida de uma conexão com um banco de dados, garantindo que a conexão sempre seja encerrada após o uso, ocorrendo erros durante as consultas ou não.
+
+Objetivo de aprendizado: Compreender o funcionamento do bloco finally e sua importância para evitar vazamento de memória e conexões abertas.
+
+Requisitos:
+
+- Criar um método fictício conectar() que imprime "Abrindo conexão".
+- Criar um método fictício fecharConexao() que imprime "Conexão fechada".
+- Usar um bloco try que simula uma consulta de banco de dados (que gera uma exceção) e garantir com o finally que o método fecharConexao() seja chamado em qualquer cenário.
