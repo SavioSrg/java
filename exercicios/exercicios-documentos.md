@@ -347,3 +347,14 @@ Requisitos:
 - Instanciar um recurso de leitura de arquivos ou um recurso simulado que implemente AutoCloseable diretamente na declaração de parênteses do try().
 - Realizar a leitura ou lógica de teste dentro do escopo do bloco.
 - Remover a necessidade de declarar um bloco finally explícito, comprovando que o Java fechou o recurso de forma oculta.
+
+### **31. Lançamento Manual de Erros (Throw)**
+Descrição do problema: Proteja a consistência interna de um modelo de dados criando regras rígidas de validação no momento da instanciação de novas entidades.
+
+Objetivo de aprendizado: Utilizar a instrução imperativa throw para barrar a criação de objetos inválidos, forçando o fluxo a parar.
+
+Requisitos:
+
+- Criar uma classe Livro que receba os atributos titulo e um objeto Autor em seu construtor.
+- No construtor, validar se o parâmetro Autor é igual a null.
+- Se for nulo, disparar manualmente uma IllegalArgumentException contendo uma mensagem clara de erro de negócio.
