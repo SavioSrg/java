@@ -337,3 +337,13 @@ Requisitos:
 - Resolver o erro de compilação da FileNotFoundException de duas formas diferentes:
   - Método A: Utilizando try-catch para tratar o erro localmente de forma amigável.
   - Método B: Adicionando a cláusula throws na assinatura do método para delegar a responsabilidade de tratamento para quem chamá-lo.
+
+### **30. Desalocação Automática com Try-with-resources**
+Descrição do problema: Refatore a lógica de leitura de arquivos (ou conexões externas) para adotar a sintaxe mais moderna do Java para liberação de recursos.
+
+Objetivo de aprendizado: Dominar o uso da estrutura try-with-resources para gerenciar automaticamente objetos que implementam a interface AutoCloseable.
+
+Requisitos:
+- Instanciar um recurso de leitura de arquivos ou um recurso simulado que implemente AutoCloseable diretamente na declaração de parênteses do try().
+- Realizar a leitura ou lógica de teste dentro do escopo do bloco.
+- Remover a necessidade de declarar um bloco finally explícito, comprovando que o Java fechou o recurso de forma oculta.
