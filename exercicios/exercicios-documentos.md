@@ -325,3 +325,15 @@ Requisitos:
 - Criar um método fictício conectar() que imprime "Abrindo conexão".
 - Criar um método fictício fecharConexao() que imprime "Conexão fechada".
 - Usar um bloco try que simula uma consulta de banco de dados (que gera uma exceção) e garantir com o finally que o método fecharConexao() seja chamado em qualquer cenário.
+
+### **29. O Desafio do Arquivo (Checked Exception)**
+Descrição do problema: Desenvolva um programa que tente abrir um arquivo de texto presente no disco rígido para leitura, lidando com as restrições impostas pelo compilador Java sobre riscos de E/S (Entrada e Saída).
+
+Objetivo de aprendizado: Resolver o requisito de compilação do compilador (catch-or-declare) para exceções do tipo Checked.
+
+Requisitos:
+
+- Tentar instanciar um leitor de arquivo java.io.FileInputStream apontando para um caminho de arquivo inexistente.
+- Resolver o erro de compilação da FileNotFoundException de duas formas diferentes:
+  - Método A: Utilizando try-catch para tratar o erro localmente de forma amigável.
+  - Método B: Adicionando a cláusula throws na assinatura do método para delegar a responsabilidade de tratamento para quem chamá-lo.
