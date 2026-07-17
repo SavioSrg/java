@@ -358,3 +358,15 @@ Requisitos:
 - Criar uma classe Livro que receba os atributos titulo e um objeto Autor em seu construtor.
 - No construtor, validar se o parâmetro Autor é igual a null.
 - Se for nulo, disparar manualmente uma IllegalArgumentException contendo uma mensagem clara de erro de negócio.
+
+### **32. Criação de Exceção Própria
+Descrição do problema: Desenvolva a lógica de saque de uma conta bancária implementando uma classe de exceção específica para o domínio do problema financeiro, evitando o uso de exceções genéricas do sistema.
+
+Objetivo de aprendizado: Criar, herdar e disparar Exceções Customizadas que reflitam regras de negócios específicas.
+
+Requisitos:
+- Criar a classe SaldoInsuficienteException estendendo de RuntimeException (tornando-a Unchecked).
+
+- Adicionar um construtor que aceite uma mensagem String e a envie para a classe mãe através de super(mensagem).
+
+- Implementar um método saca(double valor) na classe Conta que verifique se o valor do saque é maior que o saldo e dispare essa nova exceção em caso de saldo insuficiente.
