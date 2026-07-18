@@ -359,7 +359,7 @@ Requisitos:
 - No construtor, validar se o parâmetro Autor é igual a null.
 - Se for nulo, disparar manualmente uma IllegalArgumentException contendo uma mensagem clara de erro de negócio.
 
-### **32. Criação de Exceção Própria
+### **32. Criação de Exceção Própria**
 Descrição do problema: Desenvolva a lógica de saque de uma conta bancária implementando uma classe de exceção específica para o domínio do problema financeiro, evitando o uso de exceções genéricas do sistema.
 
 Objetivo de aprendizado: Criar, herdar e disparar Exceções Customizadas que reflitam regras de negócios específicas.
@@ -384,7 +384,7 @@ Requisitos:
 
 - Lançar uma nova exceção do tipo RuntimeException personalizada da aplicação, enviando a SQLException original como parâmetro do construtor da nova exceção.
 
-### 34. Validação de Conteúdo
+### 34. Validação de Conteúdo**
 Descrição do problema: Desenvolva um método verificador de cadeias de caracteres que analise a estrutura interna de um texto para garantir conformidade de formato.
 
 Objetivo de aprendizado: Integrar buscas em strings com o disparo seletivo de exceções personalizadas de domínio.
@@ -396,3 +396,13 @@ Requisitos:
 - Escrever um método que receba uma String por parâmetro.
 
 - Avaliar se o texto recebido não possui nenhuma vogal (a, e, i, o, u). Se não possuir, disparar a exceção customizada.
+
+### 35. Impedimento de Números Duplicados**
+Descrição do problema: Crie uma lista numérica dinâmica que impeça a inclusão de valores duplicados pelo usuário, disparando interrupções caso o padrão seja quebrado.
+
+Objetivo de aprendizado: Aplicar manipulação de coleções de dados integrada com a lógica de checagem em tempo de execução e emissão de erros.
+
+Requisitos:
+
+- Solicitar inteiros do console continuamente.
+- Caso o usuário insira um número inteiro que já foi digitado anteriormente, o sistema deve interromper o fluxo de adição lançando uma IllegalArgumentException.
