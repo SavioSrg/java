@@ -383,3 +383,16 @@ Requisitos:
 - Capturar essa exceção em um bloco catch.
 
 - Lançar uma nova exceção do tipo RuntimeException personalizada da aplicação, enviando a SQLException original como parâmetro do construtor da nova exceção.
+
+### 34. Validação de Conteúdo
+Descrição do problema: Desenvolva um método verificador de cadeias de caracteres que analise a estrutura interna de um texto para garantir conformidade de formato.
+
+Objetivo de aprendizado: Integrar buscas em strings com o disparo seletivo de exceções personalizadas de domínio.
+
+Requisitos:
+
+- Criar a exceção personalizada SemVogalException.
+
+- Escrever um método que receba uma String por parâmetro.
+
+- Avaliar se o texto recebido não possui nenhuma vogal (a, e, i, o, u). Se não possuir, disparar a exceção customizada.
