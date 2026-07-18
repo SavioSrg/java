@@ -370,3 +370,16 @@ Requisitos:
 - Adicionar um construtor que aceite uma mensagem String e a envie para a classe mãe através de super(mensagem).
 
 - Implementar um método saca(double valor) na classe Conta que verifique se o valor do saque é maior que o saldo e dispare essa nova exceção em caso de saldo insuficiente.
+
+### **33. Encadeamento de Exceções (Exception Chaining)**
+Descrição do problema: Em arquiteturas corporativas, erros técnicos de infraestrutura não devem chegar diretamente ao usuário final, mas o rastro técnico original não pode ser perdido. Crie um mecanismo que empacote um erro técnico dentro de um erro de negócio.
+
+Objetivo de aprendizado: Dominar o conceito de Exception Chaining para repassar exceções encapsulando a causa raiz original (cause).
+
+Requisitos:
+
+- Simular um método de persistência que jogue uma SQLException simulada ao conectar ao banco.
+
+- Capturar essa exceção em um bloco catch.
+
+- Lançar uma nova exceção do tipo RuntimeException personalizada da aplicação, enviando a SQLException original como parâmetro do construtor da nova exceção.
