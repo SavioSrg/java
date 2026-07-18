@@ -406,3 +406,16 @@ Requisitos:
 
 - Solicitar inteiros do console continuamente.
 - Caso o usuário insira um número inteiro que já foi digitado anteriormente, o sistema deve interromper o fluxo de adição lançando uma IllegalArgumentException.
+
+### 36. Regras de Exceções em Herança**
+Descrição do problema: Modele uma relação de herança onde uma classe derivada tenta sobrescrever um comportamento assinado pela classe base, violando os princípios de visibilidade e escopo de exceções verificadas.
+
+Objetivo de aprendizado: Compreender as limitações e regras rígidas impostas pelo polimorfismo do Java ao lidar com assinaturas de métodos herdados que lançam exceções (Checked Exceptions).
+
+Requisitos:
+
+- Criar uma classe base com o método calcular() que declara throws IOException.
+
+- Criar uma classe filha que sobrescreve o método calcular() e tenta alterar a cláusula para throws Exception.
+
+- Analisar o erro gerado no compilador, entendendo que o método sobrescrito na classe filha não pode lançar exceções mais genéricas (ou novas) do que as declaradas pelo pai.
