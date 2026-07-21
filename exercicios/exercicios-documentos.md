@@ -433,3 +433,15 @@ Crie um método que receba uma String contendo o valor "150.75" e outra String c
 - Tente converter a segunda String para int utilizando Integer.parseInt.
 
 - Envolva a segunda conversão em um bloco try-catch para capturar a exceção de formato inválido (NumberFormatException) e exiba uma mensagem amigável no console.
+
+### **38. Autoboxing vs Performance em Loops
+Objetivo: Sentir na prática o impacto de performance do autoboxing/unboxing desnecessário em operações repetitivas.
+
+O que fazer:
+Crie um método com dois loops simples que somem números de 1 até 10.000.000:
+
+- No Loop A, declare a variável do acumulador da soma como o Wrapper Long (Long soma = 0L;).
+
+- No Loop B, declare a variável do acumulador da soma como o primitivo long (long soma = 0L;).
+
+- Marque o tempo de execução de cada loop usando System.currentTimeMillis() e compare a diferença de tempo de processamento entre usar o Wrapper e o primitivo.
