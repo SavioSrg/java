@@ -419,3 +419,17 @@ Requisitos:
 - Criar uma classe filha que sobrescreve o método calcular() e tenta alterar a cláusula para throws Exception.
 
 - Analisar o erro gerado no compilador, entendendo que o método sobrescrito na classe filha não pode lançar exceções mais genéricas (ou novas) do que as declaradas pelo pai.
+
+## Wrappers
+
+### **37 Conversor de Formato e Validador de Entrada (Parsing)**
+Objetivo: Praticar a conversão de String para tipos primitivos usando Wrappers e o tratamento de exceção associado.
+
+O que fazer:
+Crie um método que receba uma String contendo o valor "150.75" e outra String contendo "quarenta".
+
+- Converta a primeira String para um tipo primitivo double utilizando o Wrapper correspondente (Double.parseDouble).
+
+- Tente converter a segunda String para int utilizando Integer.parseInt.
+
+- Envolva a segunda conversão em um bloco try-catch para capturar a exceção de formato inválido (NumberFormatException) e exiba uma mensagem amigável no console.
