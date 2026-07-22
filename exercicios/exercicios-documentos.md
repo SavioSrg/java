@@ -456,3 +456,17 @@ Crie uma classe de teste que faça o seguinte:
 - Declare dois objetos `Integer a = 100;` e `Integer b = 100;`. Compare-os no console usando `a == b` e `a.equals(b)`.
 - Declare dois objetos `Integer x = 200;` e `Integer y = 200;`. Compare-os no console usando `x== y`e `x.equals(y)`.
 - Comente no código o motivo pela qual `a == b` resulta em `true`, mas `x == y` resulta em `false, citando a faixa de cache.
+
+### **40. O Perigo Silencioso do Unboxing e NullPointerException**
+Objetivo: Identificar como o unboxing automático em variáveis null pode quebrar a aplicação em tempo de execução.
+
+O que fazer:
+Imagine um sistema financeiro ou de e-commerce onde o preço ou desconto pode ser opcional (nulo).
+
+- Crie uma variável Double desconto = null;.
+
+- Crie uma variável primitiva double precoFinal = 100.0;.
+
+- -Tente fazer a operação matemática precoFinal = precoFinal - desconto;
+
+- Observe o erro gerado (NullPointerException). Reescreva o código adicionando uma verificação de segurança (usando operador ternário ou if/else) para só aplicar o desconto caso a variável Wrapper não seja null.
