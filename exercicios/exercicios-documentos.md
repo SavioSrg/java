@@ -445,3 +445,14 @@ Crie um método com dois loops simples que somem números de 1 até 10.000.000:
 - No Loop B, declare a variável do acumulador da soma como o primitivo long (long soma = 0L;).
 
 - Marque o tempo de execução de cada loop usando System.currentTimeMillis() e compare a diferença de tempo de processamento entre usar o Wrapper e o primitivo.
+
+### **39. A armadilha do cache de memória**
+
+Objetivo: Evidenciar o comportamento do operador `==` vs `.equals()` e entender a faixa de cache do `Integer.valueOf()`.
+
+O que fazer:
+Crie uma classe de teste que faça o seguinte:
+
+- Declare dois objetos `Integer a = 100;` e `Integer b = 100;`. Compare-os no console usando `a == b` e `a.equals(b)`.
+- Declare dois objetos `Integer x = 200;` e `Integer y = 200;`. Compare-os no console usando `x== y`e `x.equals(y)`.
+- Comente no código o motivo pela qual `a == b` resulta em `true`, mas `x == y` resulta em `false, citando a faixa de cache.
