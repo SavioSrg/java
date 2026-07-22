@@ -470,3 +470,18 @@ Imagine um sistema financeiro ou de e-commerce onde o preço ou desconto pode se
 - -Tente fazer a operação matemática precoFinal = precoFinal - desconto;
 
 - Observe o erro gerado (NullPointerException). Reescreva o código adicionando uma verificação de segurança (usando operador ternário ou if/else) para só aplicar o desconto caso a variável Wrapper não seja null.
+
+### **41. Processador de Coleção Genérica**
+Objetivo: Aplicar Wrappers no contexto real do Collections Framework, onde o uso de primitivos é proibido.
+
+O que fazer:
+
+- Crie uma lista de números inteiros embutida em objeto Wrapper: List<Integer> numeros = new ArrayList<>();.
+
+- Adicione os valores [10, 25, 40, null, 5, 80, 127].
+
+- Faça um loop iterando sobre essa lista para calcular a soma apenas dos números pares:
+
+    - Ignore os valores que forem null sem deixar o sistema quebrar.
+
+    - Use o método intValue() ou o unboxing seguro para realizar os cálculos.
