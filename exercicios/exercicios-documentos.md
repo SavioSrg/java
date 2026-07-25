@@ -493,6 +493,17 @@ Objetivo: Fixar como a JVM gerencia objetos String na memória Heap.
 
 Crie uma variável String s = "fj11", aplique o método s.replaceAll("1", "2") e imprima a variável s.
 
-Observe o resultado impresso.
+- Observe o resultado impresso.
 
-Em seguida, ajuste o código para que a variável s de fato passe a refletir o valor "fj22".
+- Em seguida, ajuste o código para que a variável s de fato passe a refletir o valor "fj22".
+
+### **43. Extração e Manipulação de Texto**
+Objetivo: Exercitar o uso combinado de índices e métodos de corte (indexOf e substring), que são rotina no desenvolvimento Backend.
+
+Em vez de apenas iterar caractere por caractere, crie uma classe que receba um e-mail completo (ex: "usuario.silva@dominio.com") e faça o seguinte:
+
+- Verifique se o e-mail não está vazio nem em branco (isBlank()).
+
+- Descubra a posição do caractere '@'.
+
+- Extraia e imprima separadamente o nome do usuário (tudo antes do @) e o domínio (tudo depois do @).
