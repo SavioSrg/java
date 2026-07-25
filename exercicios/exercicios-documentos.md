@@ -485,3 +485,14 @@ O que fazer:
     - Ignore os valores que forem null sem deixar o sistema quebrar.
 
     - Use o método intValue() ou o unboxing seguro para realizar os cálculos.
+
+## Strings
+
+### **42. Imutabilidade na Prática**
+Objetivo: Fixar como a JVM gerencia objetos String na memória Heap.
+
+Crie uma variável String s = "fj11", aplique o método s.replaceAll("1", "2") e imprima a variável s.
+
+Observe o resultado impresso.
+
+Em seguida, ajuste o código para que a variável s de fato passe a refletir o valor "fj22".
