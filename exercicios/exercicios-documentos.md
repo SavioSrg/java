@@ -524,3 +524,12 @@ String c = new String("Java");
 - Imprima o resultado de a.equals(b) e a.equals(c).
 
 - Adicione comentários no código explicando o porquê de cada true ou false.
+
+### **45. Teste de Performance**
+Objetivo: Sentir o impacto do Garbage Collector e da alocação de memória ao lidar com repetições.
+
+Crie uma classe com método main e meça o tempo de execução (usando System.currentTimeMillis()) para duas abordagens de concatenação com 30.000 iterações:
+
+- Concentração usando String convencional e o operador +.
+
+- Concatenação usando StringBuilder e o método .append().
