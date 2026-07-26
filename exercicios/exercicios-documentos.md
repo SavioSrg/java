@@ -507,3 +507,20 @@ Em vez de apenas iterar caractere por caractere, crie uma classe que receba um e
 - Descubra a posição do caractere '@'.
 
 - Extraia e imprima separadamente o nome do usuário (tudo antes do @) e o domínio (tudo depois do @).
+
+### **44. Comparação: Referência vs. Conteúdo**
+Objetivo: Ver o comportamento do String Pool e do operador new na prática.
+
+Escreva um pequeno código que declare:
+
+
+```Java 
+String a = "Java";
+String b = "Java";
+String c = new String("Java");
+```
+- Imprima o resultado de a == b e a == c.
+
+- Imprima o resultado de a.equals(b) e a.equals(c).
+
+- Adicione comentários no código explicando o porquê de cada true ou false.
