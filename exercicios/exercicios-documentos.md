@@ -538,3 +538,8 @@ Crie uma classe com método main e meça o tempo de execução (usando System.cu
 Objetivo: Escreva uma Regex para encontrar palavras que comecem com uma letra maiúscula e sejam seguidas apenas por letras minúsculas (ex: "Java", "Regex").
 
 Entrada de teste: "Aprender Java e Regex no Brasil é excelente."
+
+### ** 47. Fronteiras de Palavra (\b)**
+Objetivo: Utilize o metacaractere de fronteira (\b) para localizar a palavra exata "gato", impedindo que ela seja capturada dentro de palavras compostas ou derivadas (como "gatilho" ou "gatoreade").
+
+Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
