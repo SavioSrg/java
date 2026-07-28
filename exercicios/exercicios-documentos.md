@@ -533,3 +533,8 @@ Crie uma classe com método main e meça o tempo de execução (usando System.cu
 - Concentração usando String convencional e o operador +.
 
 - Concatenação usando StringBuilder e o método .append().
+
+### **46. Sequências com Inicial Maiúscula**
+Objetivo: Escreva uma Regex para encontrar palavras que comecem com uma letra maiúscula e sejam seguidas apenas por letras minúsculas (ex: "Java", "Regex").
+
+Entrada de teste: "Aprender Java e Regex no Brasil é excelente."
