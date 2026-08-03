@@ -534,12 +534,28 @@ Crie uma classe com método main e meça o tempo de execução (usando System.cu
 
 - Concatenação usando StringBuilder e o método .append().
 
+## Regex
+
 ### **46. Sequências com Inicial Maiúscula**
 Objetivo: Escreva uma Regex para encontrar palavras que comecem com uma letra maiúscula e sejam seguidas apenas por letras minúsculas (ex: "Java", "Regex").
 
 Entrada de teste: "Aprender Java e Regex no Brasil é excelente."
 
-### ** 47. Fronteiras de Palavra (\b)**
+### **47. Fronteiras de Palavra (\b)**
 Objetivo: Utilize o metacaractere de fronteira (\b) para localizar a palavra exata "gato", impedindo que ela seja capturada dentro de palavras compostas ou derivadas (como "gatilho" ou "gatoreade").
 
 Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
+
+### **48. O Rastreador de Logs**
+
+- Cenário: Você está analisando um arquivo de log do sistema e precisa extrair informações de uma linha específica.
+
+- Texto de entrada: "2026-08-03 LOG_ERROR ID:8942 Falha de conexao"
+
+- O que você deve criar:
+
+  - Uma Regex para capturar exatamente o código do ID de 4 dígitos (ex: 8942).
+
+  - Uma Regex que capture a palavra "LOG_ERROR" acompanhada do espaço que a segue.
+
+  - Uma Regex de 5 caracteres que use o ponto (.) para encontrar a palavra "Falha" sem escrever a letra 'l' (ex: "F.lha").
