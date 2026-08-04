@@ -600,3 +600,19 @@ Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
 - O que você deve criar:
 
   - Trava estrita: Uma Regex utilizando âncoras (^ e $) para garantir que o texto seja exatamente 4 letras maiúsculas, um hífen e 2 dígitos.
+
+### **52. A Suíte de Validação de Cadastro**
+
+- Cenário: Monte o motor de validação para o formulário de cadastro de um sistema.
+
+- Crie a Regex para cada campo abaixo (todas devem validar a string do início ^ ao fim $):
+
+  1. CEP: Formato "35000-000".
+
+  2. Telefone: Formato "(31) 98888-7777" ou "98888-7777".
+
+  3. Data e Hora combinadas: Formato "27/07/2026 14:30".
+
+  4. Login de Usuário: Apenas letras minúsculas e números, com tamanho entre 6 e 12 caracteres.
+
+  5. E-mail: Formato padrão usuario@dominio.com ou usuario@dominio.com.br.
