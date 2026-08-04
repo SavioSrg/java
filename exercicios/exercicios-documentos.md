@@ -574,7 +574,7 @@ Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
 
   - Palavra exata (\b): Uma Regex que capture apenas a palavra "gato", ignorando "gatilho".
 
-### 50. O Analisador de Quantidades**
+### **50. O Analisador de Quantidades**
 
 - Cenário: Uma ferramenta precisa processar códigos de cupom e variações de palavras em um texto promocional.
 
@@ -588,3 +588,15 @@ Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
 
   - Exercício de comparação: Dada a sequência "a ab abb abbbb", escreva o resultado que cada uma das Regex abaixo vai capturar:
       ab?      ab+       ab*
+
+### **51. A Trava de Segurança**
+
+- Cenário: Você está criando a regra de segurança de um campo de formulário que precisa ser validado de ponta a ponta.
+
+- Texto de entrada 1: "PROD-99" (Válido)
+
+- Texto de entrada 2: "Item PROD-99 na loja" (Inválido)
+
+- O que você deve criar:
+
+  - Trava estrita: Uma Regex utilizando âncoras (^ e $) para garantir que o texto seja exatamente 4 letras maiúsculas, um hífen e 2 dígitos.
