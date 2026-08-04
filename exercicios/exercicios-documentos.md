@@ -559,3 +559,18 @@ Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
   - Uma Regex que capture a palavra "LOG_ERROR" acompanhada do espaço que a segue.
 
   - Uma Regex de 5 caracteres que use o ponto (.) para encontrar a palavra "Falha" sem escrever a letra 'l' (ex: "F.lha").
+
+### **49. O Filtro de Nomes e Arquivos**
+
+- Cenário: Você precisa validar nomes de arquivos recebidos por um servidor e entender como os conjuntos funcionam.
+
+- Texto de entrada: "foto.png, relatorio.pdf, script.sh, gato, gatilho"
+
+- O que você deve criar:
+
+  - Validação de extensão: Uma Regex usando alternância | e parênteses () para aceitar apenas arquivos que terminem em .png OU .pdf.
+
+  - Filtro por negação ([^...]): Uma Regex para encontrar todas as sequências de texto que NÃO contenham números nem vogais.
+
+  - Palavra exata (\b): Uma Regex que capture apenas a palavra "gato", ignorando "gatilho".
+
