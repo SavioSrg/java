@@ -574,3 +574,17 @@ Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
 
   - Palavra exata (\b): Uma Regex que capture apenas a palavra "gato", ignorando "gatilho".
 
+### 50. O Analisador de Quantidades**
+
+- Cenário: Uma ferramenta precisa processar códigos de cupom e variações de palavras em um texto promocional.
+
+- Texto de entrada: "CUPOM2026 color colour a ab abb abbbb"
+
+- O que você deve criar:
+
+  - Código de cupom: Uma Regex que valide o padrão "CUPOM" seguido de exatamente 4 dígitos ({n}).
+
+  - Variação ortográfica: Uma Regex usando ? para aceitar tanto "color" quanto "colour".
+
+  - Exercício de comparação: Dada a sequência "a ab abb abbbb", escreva o resultado que cada uma das Regex abaixo vai capturar:
+      ab?      ab+       ab*
