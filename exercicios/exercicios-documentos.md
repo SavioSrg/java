@@ -616,3 +616,19 @@ Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
   4. Login de Usuário: Apenas letras minúsculas e números, com tamanho entre 6 e 12 caracteres.
 
   5. E-mail: Formato padrão usuario@dominio.com ou usuario@dominio.com.br.
+
+### **53. O Processador de Dados em Java**
+
+- Cenário: Você precisa limpar, dividir e extrair informações de uma base de dados bruta contendo tags HTML e registros tabulados.
+
+- Texto de entrada: "Ana , Pedro  ,  Maria <b>Item 1</b> e <b>Item 2</b> erro: erro no sistema"
+
+- O que você deve criar:
+
+  1. Limpeza com split: A expressão usada no .split() para separar os nomes ("Ana , Pedro  ,  Maria"), ignorando os espaços ao redor das vírgulas. 
+
+  2. Substituição (replaceAll): Uma Regex para mascarar todos os nomes próprios do texto por "USUARIO".
+
+  3. Captura Relutante: Uma Regex usando o quantificador relutante (.*?) para extrair apenas a primeira tag <b>Item 1</b>, sem engolir o segundo item.
+
+  4. Retroreferência (\1): Uma Regex usando grupos () e retroreferência para identificar palavras com termos repetidos em sequência (ex: "erro: erro").
