@@ -632,3 +632,16 @@ Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
   3. Captura Relutante: Uma Regex usando o quantificador relutante (.*?) para extrair apenas a primeira tag <b>Item 1</b>, sem engolir o segundo item.
 
   4. Retroreferência (\1): Uma Regex usando grupos () e retroreferência para identificar palavras com termos repetidos em sequência (ex: "erro: erro").
+
+## equals() e hashCode()
+
+### 54. Identidade vs. Igualdade Lógica (Sobrescrita do equals)
+
+Descrição do problema: Desenvolva uma classe Produto com os atributos id (int), nome (String) e preco (double). Dois produtos devem ser considerados logicamente iguais se possuírem o mesmo id, independentemente de seus nomes ou preços estarem diferentes ou de estarem em instâncias de memória distintas.
+
+Objetivo de aprendizado: Compreender a diferença entre igualdade de referência (==) e igualdade lógica, praticando a sobrescrita do método equals() herdado de java.lang.Object.
+
+Requisitos:
+1. Sobrescrever o método equals(Object obj) respeitando a verificação de identidade (this == obj), tratamento de nulo e checagem de tipo (instanceof).
+2. Instanciar dois objetos Produto diferentes na memória (new) com o mesmo id e testar a comparação usando == e .equals().
+3. Exibir no console os resultados de ambos os testes e comentar a diferença.
