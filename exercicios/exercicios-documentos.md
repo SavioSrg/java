@@ -172,7 +172,7 @@ Requisitos:
 * Crie um método para buscar o tipo pela descrição:
 
 ```java
-tipoClientePorNomeRelato(String descricao)
+tipoClientePorNomeRelato(String descricao);
 ```
 
 * Crie o enum `TipoPagamento` contendo:
@@ -187,7 +187,7 @@ tipoClientePorNomeRelato(String descricao)
 
 * Crie um método abstrato:
 ```java
-calcularDesconto(double valor)
+calcularDesconto(double valor);
 ```
 
 * No `main`:
@@ -635,7 +635,7 @@ Entrada de teste: "O gato pulou o muro quando viu o gatilho da armadilha."
 
 ## equals() e hashCode()
 
-### 54. Identidade vs. Igualdade Lógica (Sobrescrita do equals)
+### **54. Identidade vs. Igualdade Lógica (Sobrescrita do equals)**
 
 Descrição do problema: Desenvolva uma classe Produto com os atributos id (int), nome (String) e preco (double). Dois produtos devem ser considerados logicamente iguais se possuírem o mesmo id, independentemente de seus nomes ou preços estarem diferentes ou de estarem em instâncias de memória distintas.
 
@@ -645,3 +645,18 @@ Requisitos:
 1. Sobrescrever o método equals(Object obj) respeitando a verificação de identidade (this == obj), tratamento de nulo e checagem de tipo (instanceof).
 2. Instanciar dois objetos Produto diferentes na memória (new) com o mesmo id e testar a comparação usando == e .equals().
 3. Exibir no console os resultados de ambos os testes e comentar a diferença.
+
+### **55. As 5 Propriedades do Contrato de equals()**
+Descrição do problema: Crie uma classe de testes automatizados simples (em um método main) que valide programmaticamente se a implementação do método equals() da classe Cliente atende às 5 regras do contrato formal do Java.
+
+Objetivo de aprendizado: Fixar e comprovar na prática as 5 propriedades do contrato de equals() (Reflexiva, Simétrica, Transitiva, Consistente e Não-Nulidade).
+
+Requisitos:
+1. Criar três instâncias de Cliente (x, y, z) com dados idênticos. 
+
+2. Testar e imprimir o resultado booleano de cada uma das 5 propriedades:
+   - Reflexiva: x.equals(x) deve ser true.
+   - Simétrica: x.equals(y) é igual a y.equals(x)? 
+   - Transitiva: Se x.equals(y) é true e y.equals(z) é true, x.equals(z) também é true? 
+   - Consistente: Múltiplas chamadas consecutivas de x.equals(y) retornam sempre o mesmo resultado? 
+   - Não-Nulidade: x.equals(null) retorna false sem disparar NullPointerException?
