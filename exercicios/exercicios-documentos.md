@@ -660,3 +660,8 @@ Requisitos:
    - Transitiva: Se x.equals(y) é true e y.equals(z) é true, x.equals(z) também é true? 
    - Consistente: Múltiplas chamadas consecutivas de x.equals(y) retornam sempre o mesmo resultado? 
    - Não-Nulidade: x.equals(null) retorna false sem disparar NullPointerException?
+
+### **56. O "Desastre" da Quebra de Contrato com hashCode()**
+Descrição do problema: Demonstre o que acontece quando um desenvolvedor sobrescreve o método equals() de uma entidade, mas esquece de sobrescrever o método hashCode().
+
+Objetivo de aprendizado: Se dois objetos são considerados iguais pelo equals(), eles obrigatoriamente devem possuir o mesmo hashCode().
