@@ -665,3 +665,19 @@ Requisitos:
 Descrição do problema: Demonstre o que acontece quando um desenvolvedor sobrescreve o método equals() de uma entidade, mas esquece de sobrescrever o método hashCode().
 
 Objetivo de aprendizado: Se dois objetos são considerados iguais pelo equals(), eles obrigatoriamente devem possuir o mesmo hashCode().
+
+## List
+
+### **57. Modificação Concorrente e Iteração Segura (ConcurrentModificationException)
+Descrição do problema: Desenvolva um programa que processe uma lista de números inteiros para remover todos os valores pares. Tentar remover elementos diretamente dentro de um loop enhanced-for resulta em uma ConcurrentModificationException. Refatore o código para realizar a remoção de forma segura utilizando o método removeIf ou a classe Iterator.
+
+Objetivo de aprendizado: Compreender o mecanismo fail-fast do Java Collections Framework, identificando a causa da ConcurrentModificationException e aplicando as abordagens corretas para alteração da estrutura durante a iteração.
+
+Requisitos:
+
+- Instanciar uma List<Integer> mutável contendo uma sequência de números inteiros (pares e ímpares).
+
+- Implementar a remoção dos elementos pares utilizando obrigatoriamente list.removeIf(...) ou iterator.remove().
+
+- Exibir no console a lista resultante apenas com os números ímpares mantidos.
+
