@@ -681,3 +681,14 @@ Requisitos:
 
 - Exibir no console a lista resultante apenas com os números ímpares mantidos.
 
+### **58. Navegação Bidirecional e Alteração em Tempo de Execução (ListIterator)**
+Descrição do problema: Crie um programa que receba uma lista de nomes de produtos (String). Utilize a interface ListIterator para percorrer a lista do início ao fim, convertendo todos os nomes para letras maiúsculas (toUpperCase()). Em seguida, utilizando o mesmo iterador em sentido inverso, percorra a lista de trás para frente imprimindo os elementos já modificados.
+
+Objetivo de aprendizado: Dominar os recursos exclusivos da interface ListIterator, como navegação bidirecional (hasNext/hasPrevious), alteração de elementos no lugar (set) e controle de ponteiros de iteração.
+
+- Requisitos:
+1. Instanciar uma List<String> mutável com pelo menos 3 elementos em letras minúsculas.
+
+2. Utilizar listIterator.hasNext() e listIterator.set(...) para transformar todos os elementos em maiúsculas na navegação para a frente.
+
+3. Sem reinstanciar a lista ou o iterador do zero, utilizar listIterator.hasPrevious() e listIterator.previous() para imprimir cada elemento no console na ordem inversa.
