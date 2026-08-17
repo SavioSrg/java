@@ -692,3 +692,18 @@ Objetivo de aprendizado: Dominar os recursos exclusivos da interface ListIterato
 2. Utilizar listIterator.hasNext() e listIterator.set(...) para transformar todos os elementos em maiúsculas na navegação para a frente.
 
 3. Sem reinstanciar a lista ou o iterador do zero, utilizar listIterator.hasPrevious() e listIterator.previous() para imprimir cada elemento no console na ordem inversa.
+
+### **59. Ordenação Customizada e Critérios de Desempate (List.sort e Comparator)**
+Descrição do problema: Desenvolva uma classe Aluno com os atributos nome (String) e nota (double). Crie uma lista com vários alunos e ordene-a primeiramente pela nota em ordem decrescente (da maior nota para a menor) e, caso existam alunos com a mesma nota, utilize o nome em ordem alfabética como critério de desempate.
+
+Objetivo de aprendizado: Praticar a ordenação de coleções utilizando o método .sort() da interface List combinado com a API moderna de Comparator (comparing, reversed e thenComparing).
+
+Requisitos:
+
+1. Criar a classe Aluno com construtor, métodos getters e sobrescrita do método toString().
+
+2. Instanciar uma List<Aluno> contendo pelo menos 4 alunos, garantindo que haja pelo menos dois alunos com notas idênticas para testar o desempate.
+
+3. Aplicar a ordenação na lista usando o método sort() diretamente na List com Comparator.comparing(...).
+
+4. Exibir os alunos ordenados no console.
