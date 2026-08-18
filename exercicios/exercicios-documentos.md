@@ -707,3 +707,18 @@ Requisitos:
 3. Aplicar a ordenação na lista usando o método sort() diretamente na List com Comparator.comparing(...).
 
 4. Exibir os alunos ordenados no console.
+
+### **60. Ordenação Natural de Objetos (Comparable e compareTo)**
+Descrição do problema: Desenvolva uma classe Livro com os atributos titulo (String), autor (String) e anoPublicacao (int). A classe deve implementar a interface Comparable<Livro> para definir que a ordem natural dos livros seja baseada no anoPublicacao em ordem cronológica crescente (do mais antigo para o mais recente).
+
+Objetivo de aprendizado: Compreender o conceito de ordem natural de uma classe de domínio, praticando a implementação do contrato Comparable<T> e a sobrescrita do método compareTo().
+
+Requisitos:
+
+1. Criar a classe Livro implementando Comparable<Livro>.
+
+2. Sobrescrever o método compareTo(Livro outro) comparando o atributo anoPublicacao (usando Integer.compare ou comparação direta).
+
+3. Instanciar uma List<Livro> desordenada.
+
+4. Ordenar a lista utilizando Collections.sort(lista) ou lista.sort(Comparator.naturalOrder()) e exibir os livros ordenados no console.
