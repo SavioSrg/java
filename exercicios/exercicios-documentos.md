@@ -722,3 +722,8 @@ Requisitos:
 3. Instanciar uma List<Livro> desordenada.
 
 4. Ordenar a lista utilizando Collections.sort(lista) ou lista.sort(Comparator.naturalOrder()) e exibir os livros ordenados no console.
+
+### **61. Contador de Palavras Únicas (Tokenização)**
+Objetivo: Praticar remoção de duplicatas e ordenação natural.
+
+Enunciado: Receba um texto longo (uma frase ou trecho de livro). Remova pontuações, converta todas as letras para minúsculas, divida o texto em palavras (split("\\s+")) e armazene-as em um TreeSet. Imprima quantas palavras únicas existem no texto e a lista completa em ordem alfabética.
