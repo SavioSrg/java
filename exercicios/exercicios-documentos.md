@@ -723,7 +723,21 @@ Requisitos:
 
 4. Ordenar a lista utilizando Collections.sort(lista) ou lista.sort(Comparator.naturalOrder()) e exibir os livros ordenados no console.
 
+## Set
+
 ### **61. Contador de Palavras Únicas (Tokenização)**
 Objetivo: Praticar remoção de duplicatas e ordenação natural.
 
 Enunciado: Receba um texto longo (uma frase ou trecho de livro). Remova pontuações, converta todas as letras para minúsculas, divida o texto em palavras (split("\\s+")) e armazene-as em um TreeSet. Imprima quantas palavras únicas existem no texto e a lista completa em ordem alfabética.
+
+### **62. Operações de Álgebra de Conjuntos**
+Objetivo: Dominar os métodos addAll(), retainAll() e removeAll().
+
+Enunciado: Crie dois conjuntos de números inteiros:
+- Conjunto A: [1, 2, 3, 4, 5, 6]
+- Conjunto B: [4, 5, 6, 7, 8, 9]
+
+Implemente três métodos separados que retornem (sem alterar os conjuntos originais):
+1. A União de A e B. 
+2. A Interseção de A e B. 
+3. A Diferença (elementos que estão em A, mas não em B).
