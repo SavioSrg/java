@@ -741,3 +741,46 @@ Implemente três métodos separados que retornem (sem alterar os conjuntos origi
 1. A União de A e B. 
 2. A Interseção de A e B. 
 3. A Diferença (elementos que estão em A, mas não em B).
+
+## Map
+
+### *64. Gerenciamento e Manipulação de Estoque com Map**
+
+- Objetivo:
+Praticar a manipulação de coleções do tipo Map em Java utilizando a implementação HashMap, aplicando métodos fundamentais para inserção, consulta, verificação, remoção e iteração de elementos.
+
+- Descrição do Problema:
+Você foi encarregado de desenvolver um módulo de controle de estoque para uma loja de suprimentos de informática. Cada produto possui um identificador único (id) e uma descrição (descricao). O estoque deve mapear cada objeto do tipo Produto à sua respectiva quantidade disponível (um número inteiro).
+
+  
+```java
+p1: ID 1L, Descrição "Teclado"
+p2: ID 2L, Descrição "Mouse"
+p3: ID 3L, Descrição "Monitor"
+p4: ID 4L, Descrição "Headset"
+p5: ID 5L, Descrição "Mouse"
+```
+
+- Criação e População do Mapa:
+- Instancie um HashMap<Produto, Integer> chamado estoque. 
+- Associe cada produto à sua quantidade inicial: p1 (10), p2 (25), p3 (3), p4 (8) e p5 (25).
+
+- Consultas e Verificações:
+  - Exiba a quantidade do produto p1 utilizando o método get(). 
+  - Exiba a quantidade do produto p1 utilizando getOrDefault(), garantindo o retorno 0 caso a chave não existisse. 
+  - Verifique se o produto p2 está cadastrado no estoque utilizando containsKey(). 
+  - Verifique se existe algum item com o valor de estoque igual a 25 utilizando containsValue().
+
+- Remoção e Atualização de Tamanho:
+  - Remova a entrada correspondente ao produto p5 utilizando remove() e exiba a quantidade informada no retorno do método. 
+  - Exiba a quantidade total de tipos de produtos no estoque utilizando size().
+
+- Iterações:
+  - Iteração por Chaves: Percorra o conjunto de chaves (keySet()) e imprima o ID e a descrição de cada produto. 
+  - Iteração por Valores: Percorra a coleção de valores (values()) e imprima cada uma das quantidades armazenadas. 
+  - Iteração por Entradas (Entry): Percorra o conjunto de pares chave-valor (entrySet()) e imprima no formato: `[ID] - [Descrição] | Quantidade: [Quantidade]`
+
+- Limpeza e Validação:
+  - Limpe todo o mapa utilizando o método clear().
+
+- Confirme e exiba se o mapa ficou efetivamente vazio utilizando isEmpty().
