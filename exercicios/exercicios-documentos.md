@@ -784,3 +784,12 @@ p5: ID 5L, Descrição "Mouse"
   - Limpe todo o mapa utilizando o método clear().
 
 - Confirme e exiba se o mapa ficou efetivamente vazio utilizando isEmpty().
+
+## Queue
+
+### **65.Operações Básicas e Tratamento de Exceções com LinkedList**
+Objetivo: Compreender o funcionamento FIFO (First-In, First-Out) das filas e diferenciar os métodos que lançam exceções dos métodos seguros.
+
+Parte A (Simulador de Atendimento): Crie uma fila do tipo Queue<String> instanciada como uma LinkedList. Adicione 5 nomes de clientes utilizando o método offer(). Em seguida, remova e exiba os nomes no console, um a um, utilizando poll(), confirmando que a ordem de saída é exatamente a mesma da entrada.
+
+Parte B (Tratamento de Fila Vazia): Com a fila completamente vazia, tente chamar os métodos remove() e element() dentro de blocos try-catch e exiba as mensagens das exceções geradas no console. Em seguida, teste os métodos seguros poll() e peek() na mesma fila vazia e imprima o resultado, confirmando o retorno null.
