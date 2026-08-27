@@ -397,7 +397,7 @@ Requisitos:
 
 - Avaliar se o texto recebido não possui nenhuma vogal (a, e, i, o, u). Se não possuir, disparar a exceção customizada.
 
-### 35. Impedimento de Números Duplicados**
+### **35. Impedimento de Números Duplicados**
 Descrição do problema: Crie uma lista numérica dinâmica que impeça a inclusão de valores duplicados pelo usuário, disparando interrupções caso o padrão seja quebrado.
 
 Objetivo de aprendizado: Aplicar manipulação de coleções de dados integrada com a lógica de checagem em tempo de execução e emissão de erros.
@@ -407,7 +407,7 @@ Requisitos:
 - Solicitar inteiros do console continuamente.
 - Caso o usuário insira um número inteiro que já foi digitado anteriormente, o sistema deve interromper o fluxo de adição lançando uma IllegalArgumentException.
 
-### 36. Regras de Exceções em Herança**
+### **36. Regras de Exceções em Herança**
 Descrição do problema: Modele uma relação de herança onde uma classe derivada tenta sobrescrever um comportamento assinado pela classe base, violando os princípios de visibilidade e escopo de exceções verificadas.
 
 Objetivo de aprendizado: Compreender as limitações e regras rígidas impostas pelo polimorfismo do Java ao lidar com assinaturas de métodos herdados que lançam exceções (Checked Exceptions).
@@ -434,7 +434,7 @@ Crie um método que receba uma String contendo o valor "150.75" e outra String c
 
 - Envolva a segunda conversão em um bloco try-catch para capturar a exceção de formato inválido (NumberFormatException) e exiba uma mensagem amigável no console.
 
-### **38. Autoboxing vs Performance em Loops
+### **38. Autoboxing vs Performance em Loops**
 Objetivo: Sentir na prática o impacto de performance do autoboxing/unboxing desnecessário em operações repetitivas.
 
 O que fazer:
@@ -514,7 +514,7 @@ Objetivo: Ver o comportamento do String Pool e do operador new na prática.
 Escreva um pequeno código que declare:
 
 
-```Java 
+```
 String a = "Java";
 String b = "Java";
 String c = new String("Java");
@@ -753,7 +753,7 @@ Praticar a manipulação de coleções do tipo Map em Java utilizando a implemen
 Você foi encarregado de desenvolver um módulo de controle de estoque para uma loja de suprimentos de informática. Cada produto possui um identificador único (id) e uma descrição (descricao). O estoque deve mapear cada objeto do tipo Produto à sua respectiva quantidade disponível (um número inteiro).
 
   
-```java
+```
 p1: ID 1L, Descrição "Teclado"
 p2: ID 2L, Descrição "Mouse"
 p3: ID 3L, Descrição "Monitor"
@@ -793,3 +793,10 @@ Objetivo: Compreender o funcionamento FIFO (First-In, First-Out) das filas e dif
 Parte A (Simulador de Atendimento): Crie uma fila do tipo Queue<String> instanciada como uma LinkedList. Adicione 5 nomes de clientes utilizando o método offer(). Em seguida, remova e exiba os nomes no console, um a um, utilizando poll(), confirmando que a ordem de saída é exatamente a mesma da entrada.
 
 Parte B (Tratamento de Fila Vazia): Com a fila completamente vazia, tente chamar os métodos remove() e element() dentro de blocos try-catch e exiba as mensagens das exceções geradas no console. Em seguida, teste os métodos seguros poll() e peek() na mesma fila vazia e imprima o resultado, confirmando o retorno null.
+
+### **66. Manipulação de Ordenação com PriorityQueue**
+Objetivo: Trabalhar com filas de prioridade, compreendendo a ordenação natural do Java e como aplicar comparadores customizados.
+
+Modelo A (Ordenação Natural): Crie uma PriorityQueue de números decimais (Double). Insira de 5 a 10 valores de forma aleatória (fora de ordem). Após as inserções, crie um laço de repetição que remova e imprima os valores utilizando o método poll(), verificando se a saída respeita a ordem natural crescente.
+
+Modelo B (Inversão de Prioridade): Escreva uma variação do programa anterior para alterar o comportamento da fila, forçando os elementos a saírem em ordem decrescente (maior valor sendo atendido primeiro).
