@@ -806,4 +806,7 @@ Objetivo: Aplicar os conceitos de filas na resolução de problemas práticos, m
 
 Parte A (Fila Hospitalar): Crie uma classe Paciente com os atributos nome (String) e grauDeUrgencia (Integer), onde números maiores indicam uma urgência crítica. Faça a classe Paciente implementar a interface Comparable, definindo a regra de ordenação. Em seguida, crie uma PriorityQueue<Paciente>, adicione alguns pacientes simulados e atenda-os, confirmando que os casos mais urgentes vão para a cabeça da fila automaticamente.
 
+### **68. Lógica Customizada e Modelagem de Mundo Real**
+Objetivo: Aplicar os conceitos de filas na resolução de problemas práticos, modelando objetos próprios e simulando regras de negócio.
+
 Parte B (Simulação de Supermercado): Usando uma Queue, desenvolva um pequeno simulador de caixas de supermercado. Modele clientes chegando em intervalos de tempo específicos (você pode simular isso com um loop e variáveis de "tempo de chegada" e "tempo de atendimento"). Ao final do processamento da fila, o programa deve calcular e exibir o tempo médio que os clientes aguardaram antes de serem completamente atendidos e removidos da fila.
