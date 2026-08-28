@@ -810,3 +810,11 @@ Parte A (Fila Hospitalar): Crie uma classe Paciente com os atributos nome (Strin
 Objetivo: Aplicar os conceitos de filas na resolução de problemas práticos, modelando objetos próprios e simulando regras de negócio.
 
 Parte B (Simulação de Supermercado): Usando uma Queue, desenvolva um pequeno simulador de caixas de supermercado. Modele clientes chegando em intervalos de tempo específicos (você pode simular isso com um loop e variáveis de "tempo de chegada" e "tempo de atendimento"). Ao final do processamento da fila, o programa deve calcular e exibir o tempo médio que os clientes aguardaram antes de serem completamente atendidos e removidos da fila.
+
+## Generics
+
+### **69.Troca de Posições (Método Genérico)**
+
+Problema: Crie um método genérico estático chamado trocarPosicoes que receba um array de qualquer tipo e dois índices (int). O método deve trocar os elementos dessas duas posições no array.
+
+
