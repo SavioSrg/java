@@ -32,7 +32,7 @@ public class MenuInterativo {
                     System.out.println("Cadastrado com sucesso!");
                     break;
                 case 2:
-                if (!ordemDeServico.ListaVazia()){
+                if (!ordemDeServico.listaVazia()){
                     System.out.println("Ordem de serviço: " + ordemDeServico.desempilhar());
                     System.out.println("Executada com sucesso!");
                 } else {
