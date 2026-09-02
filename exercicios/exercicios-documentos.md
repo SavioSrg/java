@@ -813,8 +813,10 @@ Parte B (Simulação de Supermercado): Usando uma Queue, desenvolva um pequeno s
 
 ## Generics
 
-### **69.Troca de Posições (Método Genérico)**
+### **69. Troca de Posições (Método Genérico)**
 
 Problema: Crie um método genérico estático chamado trocarPosicoes que receba um array de qualquer tipo e dois índices (int). O método deve trocar os elementos dessas duas posições no array.
 
+### **70. O Problema do Cast (Classe Genérica)**
+Problema: Crie uma classe genérica Pilha<T> (Stack) que possua um ArrayList<T> internamente. Implemente os métodos empilhar(T elemento), T desempilhar() e boolean estaVazia().
 
