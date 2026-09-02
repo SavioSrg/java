@@ -820,3 +820,17 @@ Problema: Crie um método genérico estático chamado trocarPosicoes que receba 
 ### **70. O Problema do Cast (Classe Genérica)**
 Problema: Crie uma classe genérica Pilha<T> (Stack) que possua um ArrayList<T> internamente. Implemente os métodos empilhar(T elemento), T desempilhar() e boolean estaVazia().
 
+### **71. O Problema do Cast - Ordem de Serviço
+
+Problema: Crie uma classe genérica Pilha<T> (Stack) que possua um ArrayList<T> internamente. Implemente os métodos empilhar(T elemento), T desempilhar() e boolean estaVazia().
+
+Em seguida, crie uma classe Equipamento com informações como nome e descricao, e utilize uma Pilha<Equipamento> para representar uma estrutura de ordens de serviço de manutenção.
+
+Crie um programa com menu interativo que permita:
+
+1. Registrar um equipamento e adicioná-lo à pilha; 
+2. Processar o equipamento do topo da pilha utilizando desempilhar(); 
+3. Consultar o próximo equipamento a ser processado, sem removê-lo; 
+4. Verificar se a pilha está vazia; 
+5. Encerrar o programa.
+
