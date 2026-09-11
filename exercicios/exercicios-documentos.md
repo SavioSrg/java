@@ -834,3 +834,28 @@ Crie um programa com menu interativo que permita:
 4. Verificar se a pilha está vazia; 
 5. Encerrar o programa.
 
+## Inner Class (não-estática)
+
+### **72. Prática de uso de *Inner Class* **
+1. Acesso a membros privados
+
+   Objetivo: fixar que a inner class enxerga tudo da classe externa, inclusive private.
+
+   Crie uma classe ContaBancaria com um atributo private double saldo. Dentro dela, crie uma inner class Extrato com um método mostrarSaldoAtual() que imprime o saldo da conta externa sem usar getter — acesso direto ao campo privado.
+
+
+2. Instanciação de fora da classe externa
+
+   Objetivo: entender a dependência de instância e a sintaxe objetoExterno.new Inner().
+
+   Usando a mesma ContaBancaria, instancie Extrato de dentro do main (fora da ContaBancaria), usando a sintaxe conta.new Extrato(). Tente também, propositalmente, instanciar new Extrato() sem uma conta antes — observe e anote o erro de compilação.
+
+
+3. Desambiguação com NomeDaClasseExterna.this
+
+   Objetivo: resolver conflito de nomes entre this da inner e this da externa.
+
+   Na ContaBancaria, declare um atributo String titular. Na inner class Extrato, declare também um atributo String titular (com outro valor). Escreva um método na Extrato que imprima os dois valores lado a lado, usando this.titular para o da inner e ContaBancaria.this.titular para o da externa.
+
+
+

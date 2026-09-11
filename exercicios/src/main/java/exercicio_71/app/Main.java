@@ -16,7 +16,7 @@ public class Main {
         }
 
         System.out.println("\nOrdem em que foram resolvidas");
-        while (!pilha.ListaVazia()) {
+        while (!pilha.listaVazia()) {
             System.out.println(pilha.desempilhar());
         }
     }
