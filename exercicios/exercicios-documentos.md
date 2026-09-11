@@ -836,7 +836,7 @@ Crie um programa com menu interativo que permita:
 
 ## Inner Class (não-estática)
 
-### **72. Prática de uso de *Inner Class* **
+### **72. Prática de uso de *Inner Class***
 1. Acesso a membros privados
 
    Objetivo: fixar que a inner class enxerga tudo da classe externa, inclusive private.
