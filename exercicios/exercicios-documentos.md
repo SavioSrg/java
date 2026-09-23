@@ -858,4 +858,9 @@ Crie um programa com menu interativo que permita:
    Na ContaBancaria, declare um atributo String titular. Na inner class Extrato, declare também um atributo String titular (com outro valor). Escreva um método na Extrato que imprima os dois valores lado a lado, usando this.titular para o da inner e ContaBancaria.this.titular para o da externa.
 
 
+## Streams
 
+### **74. Filtragem Simples**
+Dada uma lista de números inteiros List<Integer> numeros = Arrays.asList(1, 4, 7, 10, 15, 22, 33, 40);:
+
+Crie um pipeline de Stream que filtre apenas os números pares e os retorne em uma nova List<Integer>.
