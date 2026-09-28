@@ -864,3 +864,28 @@ Crie um programa com menu interativo que permita:
 Dada uma lista de números inteiros List<Integer> numeros = Arrays.asList(1, 4, 7, 10, 15, 22, 33, 40);:
 
 Crie um pipeline de Stream que filtre apenas os números pares e os retorne em uma nova List<Integer>.
+
+### **75. Processamento e Filtragem de Dados com Streams**
+Descrição do problema: Desenvolva um serviço em Java responsável por processar uma coleção de produtos utilizando a API de Streams. O sistema deve ser capaz de aplicar filtros de valor, ordenação alfabética, agrupamento por categoria e formatação de saída em formato de relatório ou lista.
+
+Objetivo de aprendizado: Dominar a manipulação de coleções com a API de Streams (filter, map, sorted, collect), o uso do Collectors.joining para formatação de texto e a ordenação com Comparator.
+
+Requisitos:
+
+Crie a classe Produto com os atributos nome (String), preco (double) e categoria (String), incluindo construtor, getters e método toString().
+
+Implemente na classe ProdutoService o método produtoPrecoFormatado(List<Produto> produtos) que filtra produtos com preço superior a R$ 100,00, obtém seus nomes, ordena-os alfabeticamente e os retorna em uma única String separada por vírgula e espaço.
+
+Implemente na classe ProdutoService o método perifericosPorPreco(List<Produto> produtos, String categoria) que filtra os produtos por uma categoria específica, ordena-os pelo preço em ordem crescente e retorna uma lista (List<String>) contendo apenas os nomes dos produtos.
+
+Na classe Main, instancie uma lista de produtos contendo diferentes categorias e faixas de preço e invoque os métodos para exibir os resultados no console.
+
+Exemplo:
+
+Entrada: Lista contendo "Mouse Gamer" (150.00, Periféricos), "Mousepad" (45.00, Acessórios), "Teclado Mecânico" (320.00, Periféricos) e "Webcam Full HD" (210.00, Periféricos).
+
+Saída produtoPrecoFormatado: "Mouse Gamer, Teclado Mecânico, Webcam Full HD"
+
+Saída perifericosPorPreco (categoria "Periféricos"): ["Mouse Gamer", "Webcam Full HD", "Teclado Mecânico"]
+
+Conceitos: Java Streams, Collectors.joining, Comparator.comparingDouble, Operações Intermediárias e Terminais, Expressões Lambda e Method References.
