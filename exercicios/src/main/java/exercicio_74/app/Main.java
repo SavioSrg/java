@@ -1,4 +1,4 @@
-package exercicio_74.model;
+package exercicio_74.app;
 
 import java.util.Arrays;
 import java.util.List;
