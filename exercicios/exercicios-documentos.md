@@ -889,3 +889,13 @@ Saída produtoPrecoFormatado: "Mouse Gamer, Teclado Mecânico, Webcam Full HD"
 Saída perifericosPorPreco (categoria "Periféricos"): ["Mouse Gamer", "Webcam Full HD", "Teclado Mecânico"]
 
 Conceitos: Java Streams, Collectors.joining, Comparator.comparingDouble, Operações Intermediárias e Terminais, Expressões Lambda e Method References.
+
+### 76.
+
+1. Map<String, Long> contagemPorCategoria(List<Produto> produtos) — quantos produtos existem por categoria. (groupingBy + counting)
+
+2. Map<String, Double> precoMedioPorCategoria(List<Produto> produtos) — preço médio por categoria. (groupingBy + averagingDouble)
+
+3. Map<String, Double> somaPrecoPorCategoria(List<Produto> produtos) — valor total em estoque por categoria. (groupingBy + summingDouble)
+
+4. Map<Boolean, List<Produto>> particionarPorPreco(List<Produto> produtos, double limite) — reescreva a lógica de "acima de R$100" de ontem, mas agora com o limite como parâmetro, não fixo no código. (partitioningBy)

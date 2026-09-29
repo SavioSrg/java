@@ -1,10 +1,9 @@
-package exercicio_75.app;
+package exercicio_76.app;
 
-import exercicio_75.model.Produto;
-import exercicio_75.service.ProdutoService;
+import exercicio_76.model.Produto;
+import exercicio_76.service.ProdutoService;
 
 import java.util.List;
-import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,17 +22,5 @@ public class Main {
 
         System.out.println(service.produtoPrecoFormatado(produtos));
         System.out.println(service.perifericosPorPreco(produtos, "Periféricos"));
-
-        Map contagemCategoria = service.contagemPorCategoria(produtos);
-        System.out.println(contagemCategoria);
-
-        Map precoMedioCategoria = service.precoMedioPorCategoria(produtos);
-        System.out.println(precoMedioCategoria);
-
-        Map precoPorCategoria = service.somaPrecoPorCategoria(produtos);
-        System.out.println(precoPorCategoria);
-
-        Map particionarPorPreco = service.particionarPorPreco(produtos, 500);
-        System.out.println(particionarPorPreco.get(true));
     }
 }
