@@ -5,6 +5,7 @@ import exercicio_75.service.ProdutoService;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,13 +28,22 @@ public class Main {
         Map contagemCategoria = service.contagemPorCategoria(produtos);
         System.out.println(contagemCategoria);
 
-        Map precoMedioCategoria = service.precoMedioPorCategoria(produtos);
+        Map<String, Double> precoMedioCategoria = service.precoMedioPorCategoria(produtos);
         System.out.println(precoMedioCategoria);
 
-        Map precoPorCategoria = service.somaPrecoPorCategoria(produtos);
+        Map<String, Double> precoPorCategoria = service.somaPrecoPorCategoria(produtos);
         System.out.println(precoPorCategoria);
 
-        Map particionarPorPreco = service.particionarPorPreco(produtos, 500);
+        Map<Boolean, List<Produto>> particionarPorPreco = service.particionarPorPreco(produtos, 500);
         System.out.println(particionarPorPreco.get(true));
+
+        Optional<Produto> produtoMaisCaro = service.produtoMaisCaro(produtos);
+        String nomeProdutoMaisCaro = produtoMaisCaro.map(Produto::getNome).orElse("Nenhum produto encontrado");
+
+        System.out.println(nomeProdutoMaisCaro);
+
+        Produto produtoEncontrado = service.buscarPorNomeOuFalhar(produtos, "Monitor 24");
+        System.out.println(produtoEncontrado);
+
     }
 }

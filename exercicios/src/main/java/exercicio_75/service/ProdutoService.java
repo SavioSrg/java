@@ -2,9 +2,7 @@ package exercicio_75.service;
 
 import exercicio_75.model.Produto;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ProdutoService {
@@ -43,5 +41,17 @@ public class ProdutoService {
     public Map<Boolean, List<Produto>> particionarPorPreco(List<Produto> produtos, double limite) {
         return produtos.stream()
                 .collect(Collectors.partitioningBy(produto -> produto.getPreco() > limite));
+    }
+
+    public Optional<Produto> produtoMaisCaro(List<Produto> produtos) {
+        return produtos.stream()
+                .max(Comparator.comparingDouble(Produto::getPreco));
+    }
+
+    public Produto buscarPorNomeOuFalhar(List<Produto> produtos, String nome) {
+        return produtos.stream()
+                .filter(produto -> produto.getNome().equals(nome))
+                .findFirst()
+                .orElseThrow(() -> new NoSuchElementException("Produto não encontrado: " + nome));
     }
 }
