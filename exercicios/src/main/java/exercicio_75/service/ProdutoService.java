@@ -75,4 +75,19 @@ public class ProdutoService {
                 .skip(2)
                 .collect(Collectors.toList());
     }
+
+    public boolean existeProdutoCaro(List<Produto> produtos, double limite) {
+        return produtos.stream()
+                .anyMatch(produto -> produto.getPreco() > limite);
+    }
+
+    public boolean todosComPrecoPositivo(List<Produto> produtos) {
+        return produtos.stream()
+                .allMatch(produto -> produto.getPreco() > 0);
+    }
+
+    public boolean nenhumSemCategoria(List<Produto> produtos) {
+        return  produtos.stream()
+                .noneMatch(produto -> produto.getCategoria().isBlank());
+    }
 }

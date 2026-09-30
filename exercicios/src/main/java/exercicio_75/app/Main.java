@@ -57,5 +57,16 @@ public class Main {
 
         List<Produto> pularDoisMaisBaratos = service.pularDoisMaisBaratos(produtos);
         System.out.println(pularDoisMaisBaratos);
+
+        boolean existeprodutoCaro = service.existeProdutoCaro(produtos, 900);
+        System.out.println(existeprodutoCaro);
+
+        boolean todosComPrecoPositivo = service.todosComPrecoPositivo(produtos);
+        System.out.println(todosComPrecoPositivo);
+
+        boolean nenhumSemCategoria = service.nenhumSemCategoria(produtos);
+        System.out.println(nenhumSemCategoria);
+
+
     }
 }
