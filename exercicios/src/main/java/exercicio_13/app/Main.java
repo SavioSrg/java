@@ -1,7 +1,7 @@
-package Exercicio_13.app;
+package exercicio_13.app;
 
-import Exercicio_13.model.Carro;
-import Exercicio_13.model.Associacao;
+import exercicio_13.model.Carro;
+import exercicio_13.model.Associacao;
 
 public class Main {
     public static void main(String[] args) {

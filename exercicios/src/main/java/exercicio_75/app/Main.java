@@ -4,8 +4,6 @@ import exercicio_75.model.Produto;
 import exercicio_75.service.ProdutoService;
 
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,49 +22,5 @@ public class Main {
 
         System.out.println(service.produtoPrecoFormatado(produtos));
         System.out.println(service.perifericosPorPreco(produtos, "Periféricos"));
-
-        Map contagemCategoria = service.contagemPorCategoria(produtos);
-        System.out.println(contagemCategoria);
-
-        Map<String, Double> precoMedioCategoria = service.precoMedioPorCategoria(produtos);
-        System.out.println(precoMedioCategoria);
-
-        Map<String, Double> precoPorCategoria = service.somaPrecoPorCategoria(produtos);
-        System.out.println(precoPorCategoria);
-
-        Map<Boolean, List<Produto>> particionarPorPreco = service.particionarPorPreco(produtos, 500);
-        System.out.println(particionarPorPreco.get(true));
-
-//        Optional<Produto> produtoMaisCaro =
-        service.produtoMaisCaro(produtos).ifPresentOrElse(
-                produto -> System.out.println("Mais caro: " + produto.getNome()),
-                () -> System.out.println("Lista vazia")
-        );
-
-        // String nomeProdutoMaisCaro = produtoMaisCaro.map(Produto::getNome).orElse("Nenhum produto encontrado");
-        //System.out.println(nomeProdutoMaisCaro);
-
-        Produto produtoEncontrado = service.buscarPorNomeOuFalhar(produtos, "Monitor 24");
-        System.out.println(produtoEncontrado);
-
-        List<String> categoriasUnicas = service.categoriasUnicas(produtos);
-        System.out.println(categoriasUnicas);
-
-        List<Produto> topMaisCaros = service.top3MaisCaros(produtos);
-        System.out.println(topMaisCaros);
-
-        List<Produto> pularDoisMaisBaratos = service.pularDoisMaisBaratos(produtos);
-        System.out.println(pularDoisMaisBaratos);
-
-        boolean existeprodutoCaro = service.existeProdutoCaro(produtos, 900);
-        System.out.println(existeprodutoCaro);
-
-        boolean todosComPrecoPositivo = service.todosComPrecoPositivo(produtos);
-        System.out.println(todosComPrecoPositivo);
-
-        boolean nenhumSemCategoria = service.nenhumSemCategoria(produtos);
-        System.out.println(nenhumSemCategoria);
-
-
     }
 }

@@ -1,4 +1,4 @@
-package Exercicio_13.model;
+package exercicio_13.model;
 
 public class Associacao {
     private String placa;
