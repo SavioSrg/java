@@ -37,10 +37,14 @@ public class Main {
         Map<Boolean, List<Produto>> particionarPorPreco = service.particionarPorPreco(produtos, 500);
         System.out.println(particionarPorPreco.get(true));
 
-        Optional<Produto> produtoMaisCaro = service.produtoMaisCaro(produtos);
-        String nomeProdutoMaisCaro = produtoMaisCaro.map(Produto::getNome).orElse("Nenhum produto encontrado");
+//        Optional<Produto> produtoMaisCaro =
+        service.produtoMaisCaro(produtos).ifPresentOrElse(
+                produto -> System.out.println("Mais caro: " + produto.getNome()),
+                () -> System.out.println("Lista vazia")
+        );
 
-        System.out.println(nomeProdutoMaisCaro);
+        // String nomeProdutoMaisCaro = produtoMaisCaro.map(Produto::getNome).orElse("Nenhum produto encontrado");
+        //System.out.println(nomeProdutoMaisCaro);
 
         Produto produtoEncontrado = service.buscarPorNomeOuFalhar(produtos, "Monitor 24");
         System.out.println(produtoEncontrado);
