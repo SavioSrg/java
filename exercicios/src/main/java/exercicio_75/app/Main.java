@@ -49,5 +49,13 @@ public class Main {
         Produto produtoEncontrado = service.buscarPorNomeOuFalhar(produtos, "Monitor 24");
         System.out.println(produtoEncontrado);
 
+        List<String> categoriasUnicas = service.categoriasUnicas(produtos);
+        System.out.println(categoriasUnicas);
+
+        List<Produto> topMaisCaros = service.top3MaisCaros(produtos);
+        System.out.println(topMaisCaros);
+
+        List<Produto> pularDoisMaisBaratos = service.pularDoisMaisBaratos(produtos);
+        System.out.println(pularDoisMaisBaratos);
     }
 }

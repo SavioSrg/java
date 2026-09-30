@@ -899,3 +899,10 @@ Conceitos: Java Streams, Collectors.joining, Comparator.comparingDouble, Operaç
 3. Map<String, Double> somaPrecoPorCategoria(List<Produto> produtos) — valor total em estoque por categoria. (groupingBy + summingDouble)
 
 4. Map<Boolean, List<Produto>> particionarPorPreco(List<Produto> produtos, double limite) — reescreva a lógica de "acima de R$100" de ontem, mas agora com o limite como parâmetro, não fixo no código. (partitioningBy)
+
+## 77. 
+Continue no ProdutoService:
+
+List<String> categoriasUnicas(List<Produto> produtos) — lista as categorias sem repetição. (map + distinct + collect)
+List<Produto> top3MaisCaros(List<Produto> produtos) — os 3 produtos de maior preço. (sorted decrescente + limit)
+List<Produto> pularDoisMaisBaratos(List<Produto> produtos) — a lista ordenada por preço crescente, pulando os 2 primeiros. (sorted + skip)

@@ -54,4 +54,25 @@ public class ProdutoService {
                 .findFirst()
                 .orElseThrow(() -> new NoSuchElementException("Produto não encontrado: " + nome));
     }
+
+    public List<String> categoriasUnicas(List<Produto> produtos) {
+        return produtos.stream()
+                .map(Produto::getCategoria)
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    public List<Produto> top3MaisCaros(List<Produto> produtos) {
+        return produtos.stream()
+                .sorted(Comparator.comparingDouble(Produto::getPreco).reversed())
+                .limit(3)
+                .collect(Collectors.toList());
+    }
+
+    public List<Produto> pularDoisMaisBaratos(List<Produto> produtos) {
+        return produtos.stream()
+                .sorted(Comparator.comparingDouble(Produto::getPreco))
+                .skip(2)
+                .collect(Collectors.toList());
+    }
 }
